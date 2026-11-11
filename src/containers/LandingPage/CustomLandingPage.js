@@ -14,71 +14,114 @@ const IconSearch = () => (
   </svg>
 );
 
+// Excavator bucket — side profile with curved back, flat bottom, teeth
 const IconBucket = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 7h18l-2 13H5L3 7z" />
-    <path d="M3 7l1-3h16l1 3" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 6l2 1v5c0 2 1 4 3 5h8l3-4V8l2-2" />
+    <path d="M6 12h12" />
+    <path d="M9 17l-1 2" />
+    <path d="M12 17v2" />
+    <path d="M15 17l1 2" />
+    <path d="M18 17l2 2" />
+    <path d="M4 6c0 0 1-1 3-1" />
   </svg>
 );
 
+// Dozer/grader blade — wide curved moldboard on mounting frame
 const IconBlade = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2 16c0-2 2-6 10-6s10 4 10 6" />
+    <path d="M2 16h20" />
+    <path d="M4 16v3" />
+    <path d="M20 16v3" />
+    <path d="M9 10V6l3-2 3 2v4" />
+    <path d="M12 4v2" />
   </svg>
 );
 
+// Auger — helical screw bit with drive hex at top
 const IconAuger = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 2v20" />
-    <path d="M2 12c3 0 5-2 5-5" />
-    <path d="M22 12c-3 0-5 2-5 5" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M10 2h4l1 2h-6l1-2z" />
+    <path d="M12 4v1" />
+    <path d="M12 22l-1-1" />
+    <path d="M8 7c4 0 4 3 0 3" />
+    <path d="M16 10c-4 0-4 3 0 3" />
+    <path d="M8 13c4 0 4 3 0 3" />
+    <path d="M16 16c-4 0-4 3 0 3" />
+    <path d="M12 5v17" />
   </svg>
 );
 
+// Grapple — open tines/jaws with pivot mount
 const IconGrapple = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2v6" />
-    <path d="M4 14l4-6h8l4 6" />
-    <path d="M4 14c0 4 3.5 8 8 8s8-4 8-8" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="9" y="2" width="6" height="4" rx="1" />
+    <path d="M12 6v3" />
+    <path d="M8 9h8" />
+    <path d="M8 9l-5 9c-1 2 0 3 1 3" />
+    <path d="M16 9l5 9c1 2 0 3-1 3" />
+    <path d="M8 9l-2 12c0 1 1 2 2 1" />
+    <path d="M16 9l2 12c0 1-1 2-2 1" />
   </svg>
 );
 
+// Snow plow blade — curved face with mounting arms, angled
 const IconPlow = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 20h16" />
-    <path d="M4 20L8 4h2l6 16" />
-    <path d="M20 20l-4-8" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 18c0-3 3-10 9-10s9 7 9 10" />
+    <path d="M3 18h18" />
+    <path d="M12 8V4" />
+    <path d="M9 4h6" />
+    <path d="M8 12l4-4 4 4" />
+    <path d="M5 18v2" />
+    <path d="M19 18v2" />
   </svg>
 );
 
+// Rotary mower deck — flat deck with hitch and blades underneath
 const IconMower = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="8" width="16" height="8" rx="2" />
-    <circle cx="6" cy="19" r="2" />
-    <circle cx="14" cy="19" r="2" />
-    <path d="M18 12h4" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="10" width="18" height="6" rx="2" />
+    <path d="M3 13h-1" />
+    <path d="M12 10V6l-4-2" />
+    <path d="M7 16l1 3" />
+    <path d="M17 16l-1 3" />
+    <circle cx="9" cy="13" r="2" />
+    <circle cx="15" cy="13" r="2" />
+    <path d="M6 19h12" />
   </svg>
 );
 
+// Sprayer — tank with boom arms and nozzle drops
 const IconSprayer = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2v4" />
-    <path d="M8 6h8v4a4 4 0 0 1-8 0V6z" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="7" y="4" width="10" height="8" rx="2" />
+    <path d="M12 12v2" />
+    <path d="M4 14h16" />
+    <path d="M4 14v2" />
+    <path d="M8 14v2" />
     <path d="M12 14v4" />
-    <path d="M8 22h8" />
-    <path d="M7 2l2 2" />
-    <path d="M17 2l-2 2" />
+    <path d="M16 14v2" />
+    <path d="M20 14v2" />
+    <path d="M4 16l-1 2" />
+    <path d="M8 16l-0.5 2" />
+    <path d="M12 18l0 2" />
+    <path d="M16 16l0.5 2" />
+    <path d="M20 16l1 2" />
   </svg>
 );
 
+// Front loader / skid steer — side profile with raised arm and bucket
 const IconLoader = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="1" y="14" width="14" height="6" rx="1" />
-    <circle cx="5" cy="22" r="2" />
-    <circle cx="11" cy="22" r="2" />
-    <path d="M15 14V8l6 6h-6z" />
-    <path d="M15 8h6v6" />
+  <svg className={css.quickCatIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="13" width="12" height="6" rx="1" />
+    <circle cx="5" cy="21" r="1.5" />
+    <circle cx="11" cy="21" r="1.5" />
+    <path d="M14 16h2v3h-2" />
+    <path d="M14 13l4-7" />
+    <path d="M18 6h4l1 3h-5" />
+    <path d="M18 6l0.5-2h3l0.5 2" />
   </svg>
 );
 
@@ -166,29 +209,48 @@ const HeroSection = () => {
   );
 };
 
-// ─── Quick Category Icons (horizontal scroll row) ─────────────
-const QUICK_CATS = [
+// ─── Quick Category Icons (separated by sector) ─────────────
+const CONSTRUCTION_CATS = [
   { icon: IconBucket, label: 'Buckets', search: 'pub_categoryLevel2=buckets' },
   { icon: IconBlade, label: 'Blades', search: 'pub_categoryLevel2=blades' },
   { icon: IconAuger, label: 'Augers', search: 'pub_categoryLevel2=augers' },
   { icon: IconGrapple, label: 'Grapples', search: 'pub_categoryLevel2=grapples' },
+  { icon: IconLoader, label: 'Loaders', search: 'pub_categoryLevel2=loaders' },
+];
+
+const FARM_CATS = [
   { icon: IconPlow, label: 'Plows', search: 'pub_categoryLevel2=plows' },
   { icon: IconMower, label: 'Mowers', search: 'pub_categoryLevel2=mowers' },
   { icon: IconSprayer, label: 'Sprayers', search: 'pub_categoryLevel2=sprayers' },
-  { icon: IconLoader, label: 'Loaders', search: 'pub_categoryLevel2=loaders' },
 ];
 
 const QuickCategoryRow = () => (
   <section className={css.quickCatSection}>
-    <div className={css.quickCatScroll}>
-      {QUICK_CATS.map(cat => (
-        <a key={cat.label} href={`/s?${cat.search}`} className={css.quickCatItem}>
-          <div className={css.quickCatCircle}>
-            <cat.icon />
-          </div>
-          <span className={css.quickCatLabel}>{cat.label}</span>
-        </a>
-      ))}
+    <div className={css.quickCatGroup}>
+      <h3 className={css.quickCatGroupTitle}>Construction</h3>
+      <div className={css.quickCatScroll}>
+        {CONSTRUCTION_CATS.map(cat => (
+          <a key={cat.label} href={`/s?${cat.search}`} className={css.quickCatItem}>
+            <div className={css.quickCatCircle}>
+              <cat.icon />
+            </div>
+            <span className={css.quickCatLabel}>{cat.label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+    <div className={css.quickCatGroup}>
+      <h3 className={css.quickCatGroupTitle}>Agriculture</h3>
+      <div className={css.quickCatScroll}>
+        {FARM_CATS.map(cat => (
+          <a key={cat.label} href={`/s?${cat.search}`} className={css.quickCatItem}>
+            <div className={css.quickCatCircle}>
+              <cat.icon />
+            </div>
+            <span className={css.quickCatLabel}>{cat.label}</span>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 );
@@ -482,7 +544,6 @@ const CustomLandingPage = props => {
               <TrustBanner />
               <TrustBar />
               <HowItWorksSection />
-              <TestimonialsSection />
               <CTASection />
             </Main>
             <Footer>
