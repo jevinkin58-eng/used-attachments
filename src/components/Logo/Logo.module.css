@@ -13,14 +13,15 @@
 }
 
 .logo {
-  /* If height is increased, change link margins accordingly */
-  /* NOTE: extremely wide logos may look bad. This will scale them to container of 24 x 200. */
   height: auto;
   width: auto;
-  /* Mobile topbar has maximum of 100vw - 132px space for logo */
   max-width: min(calc(100vw - 132px), 100%, 370px);
   object-fit: contain;
   object-position: center;
+  /* Force logo to display bigger regardless of Console height setting */
+  min-height: 44px;
+  transform: scale(1.6);
+  transform-origin: left center;
 
   @media (--viewportLarge) {
     max-width: min(100%, 370px);
@@ -28,11 +29,11 @@
 }
 
 .logo24 {
-  max-height: 48px;
+  max-height: 64px;
 }
 .logo36 {
-  max-height: 56px;
+  max-height: 64px;
 }
 .logo48 {
-  max-height: 64px;
+  max-height: 72px;
 }
