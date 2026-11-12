@@ -17,65 +17,91 @@ const IconSearch = () => (
 // Excavator bucket — solid silhouette with teeth and hinge pin
 const IconBucket = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 16 C12 10, 18 6, 26 6 L36 6 L40 12 L48 12 C50 12, 52 14, 52 17 L52 28 C52 33, 49 37, 45 40 L14 40 C10 38, 8 33, 8 28 L8 20 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
-    <line x1="10" y1="28" x2="50" y2="28" stroke="currentColor" strokeWidth="1.5" opacity="0.4"/>
-    <circle cx="54" cy="14" r="3" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
-    <path d="M57 14 L62 16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
-    <path d="M14 40 L14 52 M22 40 L22 54 M30 40 L30 54 M38 40 L38 54 M44 40 L44 52" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round"/>
+    {/* Excavator bucket - clear scoop shape */}
+    <path d="M8 8 L8 36 C8 40, 10 42, 14 42 L50 42 C54 42, 56 40, 56 36 L56 24 L44 8 Z" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    <path d="M8 36 L56 36" stroke="currentColor" strokeWidth="2" opacity="0.5"/>
+    {/* Teeth along the bottom */}
+    <path d="M14 42 L12 52 L18 52 L20 42 M24 42 L22 52 L28 52 L30 42 M34 42 L32 52 L38 52 L40 42 M44 42 L42 52 L48 52 L50 42" fill="currentColor" opacity="0.5" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/>
+    {/* Pin holes */}
+    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2.5" opacity="0.5"/>
+    <circle cx="52" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2.5" opacity="0.5"/>
   </svg>
 );
 
-// Dozer blade — solid wide curved blade with push frame
+// Dozer blade — wide curved blade pushing forward
 const IconBlade = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 42 C4 34, 14 18, 32 18 C50 18, 60 34, 60 42 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
-    <rect x="3" y="42" width="58" height="6" rx="2" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2"/>
-    <path d="M22 18 L22 10 L32 5 L42 10 L42 18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <circle cx="32" cy="10" r="2.5" fill="currentColor" opacity="0.35"/>
-    <line x1="10" y1="48" x2="10" y2="56" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-    <line x1="54" y1="48" x2="54" y2="56" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+    {/* Blade face */}
+    <path d="M4 18 L4 44 L60 44 L60 18 C50 14, 42 12, 32 12 C22 12, 14 14, 4 18 Z" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    {/* Cutting edge */}
+    <rect x="2" y="44" width="60" height="6" rx="1" fill="currentColor" opacity="0.55" stroke="currentColor" strokeWidth="2"/>
+    {/* Push arms */}
+    <path d="M18 24 L28 6 L36 6 L46 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
+    {/* Ribs */}
+    <line x1="16" y1="20" x2="16" y2="44" stroke="currentColor" strokeWidth="1.5" opacity="0.3"/>
+    <line x1="32" y1="16" x2="32" y2="44" stroke="currentColor" strokeWidth="1.5" opacity="0.3"/>
+    <line x1="48" y1="20" x2="48" y2="44" stroke="currentColor" strokeWidth="1.5" opacity="0.3"/>
+    {/* Skid shoes */}
+    <rect x="6" y="50" width="10" height="6" rx="2" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="1.5"/>
+    <rect x="48" y="50" width="10" height="6" rx="2" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="1.5"/>
   </svg>
 );
 
-// Auger — solid helical drill bit with drive head
+// Auger — clear drill/spiral shape
 const IconAuger = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M24 2 L40 2 L42 8 L22 8 Z" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-    <line x1="32" y1="8" x2="32" y2="56" stroke="currentColor" strokeWidth="3"/>
-    <ellipse cx="22" cy="16" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(-10, 22, 16)"/>
-    <ellipse cx="42" cy="26" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(10, 42, 26)"/>
-    <ellipse cx="22" cy="36" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(-10, 22, 36)"/>
-    <ellipse cx="42" cy="46" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(10, 42, 46)"/>
-    <path d="M32 56 L28 62 L36 62 Z" fill="currentColor" opacity="0.5"/>
+    {/* Drive head / motor housing */}
+    <rect x="20" y="2" width="24" height="14" rx="4" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5"/>
+    {/* Central shaft */}
+    <rect x="29" y="16" width="6" height="38" fill="currentColor" opacity="0.45" stroke="currentColor" strokeWidth="1.5"/>
+    {/* Spiral flights */}
+    <path d="M29 20 C16 22, 14 26, 29 28" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    <path d="M35 24 C48 26, 50 30, 35 32" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    <path d="M29 32 C16 34, 14 38, 29 40" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    <path d="M35 36 C48 38, 50 42, 35 44" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    <path d="M29 44 C16 46, 14 50, 29 52" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    {/* Drill tip */}
+    <path d="M29 54 L32 62 L35 54" fill="currentColor" opacity="0.5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
   </svg>
 );
 
-// Grapple — solid open jaws with mount
+// Grapple — clear claw/pincer shape
 const IconGrapple = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="22" y="2" width="20" height="10" rx="3" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2"/>
-    <line x1="32" y1="12" x2="32" y2="20" stroke="currentColor" strokeWidth="3"/>
-    <rect x="14" y="20" width="36" height="5" rx="2.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2"/>
-    <path d="M16 25 C12 36, 8 50, 10 56 C10 59, 14 59, 15 56 L22 34" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M48 25 C52 36, 56 50, 54 56 C54 59, 50 59, 49 56 L42 34" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M22 25 C20 36, 16 52, 18 57 C18 59, 22 59, 23 57 L30 34" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M42 25 C44 36, 48 52, 46 57 C46 59, 42 59, 41 57 L34 34" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    {/* Mount plate */}
+    <rect x="20" y="2" width="24" height="10" rx="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5"/>
+    {/* Hydraulic cylinder */}
+    <rect x="28" y="12" width="8" height="12" rx="2" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2"/>
+    {/* Cross bar */}
+    <rect x="10" y="24" width="44" height="6" rx="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2"/>
+    {/* Left jaw */}
+    <path d="M14 30 L6 52 C5 56, 8 58, 12 56 L24 36" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    {/* Right jaw */}
+    <path d="M50 30 L58 52 C59 56, 56 58, 52 56 L40 36" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    {/* Jaw tips (teeth) */}
+    <circle cx="8" cy="54" r="3" fill="currentColor" opacity="0.5"/>
+    <circle cx="56" cy="54" r="3" fill="currentColor" opacity="0.5"/>
   </svg>
 );
 
 // Plow — 3-bottom moldboard with coulter discs and hitch
 const IconPlow = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 10 L18 10 L22 16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <path d="M8 10 L8 16 L18 16" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M16 18 C22 24, 24 34, 24 46 L16 46 C16 36, 14 28, 10 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M28 18 C34 24, 36 34, 36 46 L28 46 C28 36, 26 28, 22 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M40 18 C46 24, 48 34, 48 46 L40 46 C40 36, 38 28, 34 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <rect x="14" y="46" width="38" height="4" rx="1.5" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2"/>
-    <rect x="12" y="52" width="42" height="5" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
-    <circle cx="14" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <circle cx="26" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <circle cx="38" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
+    {/* Hitch arm / drawbar */}
+    <path d="M6 8 L20 8 L24 14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" fill="none"/>
+    <circle cx="8" cy="8" r="3" fill="currentColor" opacity="0.5"/>
+    {/* Frame bar */}
+    <rect x="12" y="14" width="44" height="5" rx="2" fill="currentColor" opacity="0.45" stroke="currentColor" strokeWidth="2"/>
+    {/* Plow blades - bold curved shares */}
+    <path d="M16 19 C20 26, 22 36, 22 48 L14 48 C14 38, 12 28, 8 22 Z" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    <path d="M30 19 C34 26, 36 36, 36 48 L28 48 C28 38, 26 28, 22 22 Z" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    <path d="M44 19 C48 26, 50 36, 50 48 L42 48 C42 38, 40 28, 36 22 Z" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    {/* Cutting edge */}
+    <rect x="10" y="48" width="44" height="5" rx="1.5" fill="currentColor" opacity="0.55" stroke="currentColor" strokeWidth="2"/>
+    {/* Coulter discs */}
+    <circle cx="18" cy="58" r="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="34" cy="58" r="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="50" cy="58" r="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="1.5"/>
   </svg>
 );
 
@@ -97,17 +123,23 @@ const IconMower = () => (
 // Tilt Rotator — rotating coupler with tilt mechanism
 const IconTiltRotator = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="16" y="2" width="32" height="12" rx="3" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2.5"/>
-    <circle cx="32" cy="26" r="12" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
-    <circle cx="32" cy="26" r="6" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2"/>
-    <path d="M20 14 L20 18 C20 20, 22 22, 24 22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
-    <path d="M44 14 L44 18 C44 20, 42 22, 40 22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
-    <path d="M22 38 L16 50 L48 50 L42 38" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
-    <rect x="14" y="50" width="36" height="8" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
-    <path d="M40 20 C46 22, 48 26, 46 32" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-    <path d="M47 30 L46 32 L44 30" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-    <path d="M24 32 C18 30, 16 26, 18 20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-    <path d="M17 22 L18 20 L20 22" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+    {/* Top mount plate */}
+    <rect x="14" y="2" width="36" height="10" rx="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5"/>
+    {/* Rotation bearing ring */}
+    <circle cx="32" cy="28" r="14" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="3"/>
+    <circle cx="32" cy="28" r="8" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2"/>
+    {/* Connecting arms */}
+    <path d="M20 12 L20 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+    <path d="M44 12 L44 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+    {/* Bottom adapter plate */}
+    <rect x="16" y="44" width="32" height="10" rx="3" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2.5"/>
+    {/* Tilt arrows */}
+    <path d="M8 22 C6 28, 8 34, 12 38" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+    <path d="M10 36 L12 38 L14 36" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+    <path d="M56 22 C58 28, 56 34, 52 38" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+    <path d="M54 36 L52 38 L50 36" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+    {/* Pin holes */}
+    <circle cx="32" cy="28" r="3" fill="currentColor" opacity="0.5"/>
   </svg>
 );
 
