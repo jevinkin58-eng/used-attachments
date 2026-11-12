@@ -94,39 +94,20 @@ const IconMower = () => (
   </svg>
 );
 
-// Sprayer — tank with boom arms and nozzle drops
-const IconSprayer = () => (
+// Tilt Rotator — rotating coupler with tilt mechanism
+const IconTiltRotator = () => (
   <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="18" y="4" width="28" height="24" rx="6" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5"/>
-    <path d="M26 4 C26 0, 38 0, 38 4" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <line x1="32" y1="28" x2="32" y2="36" stroke="currentColor" strokeWidth="3"/>
-    <rect x="4" y="36" width="56" height="5" rx="2.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.2"/>
-    <line x1="8" y1="41" x2="7" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="18" y1="41" x2="17" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="32" y1="41" x2="32" y2="52" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="46" y1="41" x2="47" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="56" y1="41" x2="57" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="7" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="17" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="32" cy="54" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="47" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="57" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-  </svg>
-);
-
-// Skid steer / front loader — side view with cab, boom arm and bucket
-const IconLoader = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="26" width="30" height="18" rx="3" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5"/>
-    <rect x="8" y="20" width="18" height="12" rx="2" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="1.8"/>
-    <rect x="10" y="22" width="14" height="7" rx="1" fill="currentColor" opacity="0.1"/>
-    <circle cx="8" cy="50" r="5.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
-    <circle cx="26" cy="50" r="5.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
-    <line x1="2" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="1.8"/>
-    <path d="M32 36 L40 36 L40 44 L32 44" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <line x1="34" y1="26" x2="48" y2="8" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M48 8 L60 8 L62 16 L48 16 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M48 8 L50 2 L60 2 L62 8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
+    <rect x="16" y="2" width="32" height="12" rx="3" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2.5"/>
+    <circle cx="32" cy="26" r="12" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
+    <circle cx="32" cy="26" r="6" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2"/>
+    <path d="M20 14 L20 18 C20 20, 22 22, 24 22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
+    <path d="M44 14 L44 18 C44 20, 42 22, 40 22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
+    <path d="M22 38 L16 50 L48 50 L42 38" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
+    <rect x="14" y="50" width="36" height="8" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
+    <path d="M40 20 C46 22, 48 26, 46 32" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+    <path d="M47 30 L46 32 L44 30" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+    <path d="M24 32 C18 30, 16 26, 18 20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
+    <path d="M17 22 L18 20 L20 22" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
   </svg>
 );
 
@@ -220,13 +201,12 @@ const CONSTRUCTION_CATS = [
   { icon: IconBlade, label: 'Blades', search: 'pub_categoryLevel2=blades' },
   { icon: IconAuger, label: 'Augers', search: 'pub_categoryLevel2=augers' },
   { icon: IconGrapple, label: 'Grapples', search: 'pub_categoryLevel2=grapples' },
-  { icon: IconLoader, label: 'Loaders', search: 'pub_categoryLevel2=loaders' },
+  { icon: IconTiltRotator, label: 'Tilt Rotators', search: 'pub_categoryLevel2=tilt-rotators' },
 ];
 
 const FARM_CATS = [
   { icon: IconPlow, label: 'Plows', search: 'pub_categoryLevel2=plows' },
   { icon: IconMower, label: 'Mowers', search: 'pub_categoryLevel2=mowers' },
-  { icon: IconSprayer, label: 'Sprayers', search: 'pub_categoryLevel2=sprayers' },
 ];
 
 const QuickCategoryRow = () => (
@@ -270,7 +250,7 @@ const CATEGORIES = [
   },
   {
     title: 'Farm Attachments',
-    count: 'Plows, Mowers, Sprayers & more',
+    count: 'Plows, Mowers & more',
     image: 'https://images.unsplash.com/photo-1559214337-2bffadf34b3a?auto=format&fit=crop&w=800&q=80',
     searchParam: 'pub_categoryLevel1=farm',
   },
