@@ -14,121 +14,16 @@ const IconSearch = () => (
   </svg>
 );
 
-// Excavator bucket — solid silhouette with teeth and hinge pin
-const IconBucket = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 16 C12 10, 18 6, 26 6 L36 6 L40 12 L48 12 C50 12, 52 14, 52 17 L52 28 C52 33, 49 37, 45 40 L14 40 C10 38, 8 33, 8 28 L8 20 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
-    <line x1="10" y1="28" x2="50" y2="28" stroke="currentColor" strokeWidth="1.5" opacity="0.4"/>
-    <circle cx="54" cy="14" r="3" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
-    <path d="M57 14 L62 16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
-    <path d="M14 40 L14 52 M22 40 L22 54 M30 40 L30 54 M38 40 L38 54 M44 40 L44 52" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round"/>
-  </svg>
-);
-
-// Dozer blade — solid wide curved blade with push frame
-const IconBlade = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 42 C4 34, 14 18, 32 18 C50 18, 60 34, 60 42 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round"/>
-    <rect x="3" y="42" width="58" height="6" rx="2" fill="currentColor" opacity="0.4" stroke="currentColor" strokeWidth="2"/>
-    <path d="M22 18 L22 10 L32 5 L42 10 L42 18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <circle cx="32" cy="10" r="2.5" fill="currentColor" opacity="0.35"/>
-    <line x1="10" y1="48" x2="10" y2="56" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-    <line x1="54" y1="48" x2="54" y2="56" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-  </svg>
-);
-
-// Auger — solid helical drill bit with drive head
-const IconAuger = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M24 2 L40 2 L42 8 L22 8 Z" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-    <line x1="32" y1="8" x2="32" y2="56" stroke="currentColor" strokeWidth="3"/>
-    <ellipse cx="22" cy="16" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(-10, 22, 16)"/>
-    <ellipse cx="42" cy="26" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(10, 42, 26)"/>
-    <ellipse cx="22" cy="36" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(-10, 22, 36)"/>
-    <ellipse cx="42" cy="46" rx="12" ry="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" transform="rotate(10, 42, 46)"/>
-    <path d="M32 56 L28 62 L36 62 Z" fill="currentColor" opacity="0.5"/>
-  </svg>
-);
-
-// Grapple — solid open jaws with mount
-const IconGrapple = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="22" y="2" width="20" height="10" rx="3" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2"/>
-    <line x1="32" y1="12" x2="32" y2="20" stroke="currentColor" strokeWidth="3"/>
-    <rect x="14" y="20" width="36" height="5" rx="2.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2"/>
-    <path d="M16 25 C12 36, 8 50, 10 56 C10 59, 14 59, 15 56 L22 34" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M48 25 C52 36, 56 50, 54 56 C54 59, 50 59, 49 56 L42 34" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M22 25 C20 36, 16 52, 18 57 C18 59, 22 59, 23 57 L30 34" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M42 25 C44 36, 48 52, 46 57 C46 59, 42 59, 41 57 L34 34" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-// Plow — 3-bottom moldboard with coulter discs and hitch
-const IconPlow = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4 10 L18 10 L22 16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <path d="M8 10 L8 16 L18 16" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M16 18 C22 24, 24 34, 24 46 L16 46 C16 36, 14 28, 10 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M28 18 C34 24, 36 34, 36 46 L28 46 C28 36, 26 28, 22 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M40 18 C46 24, 48 34, 48 46 L40 46 C40 36, 38 28, 34 22 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <rect x="14" y="46" width="38" height="4" rx="1.5" fill="currentColor" opacity="0.35" stroke="currentColor" strokeWidth="2"/>
-    <rect x="12" y="52" width="42" height="5" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" strokeWidth="2"/>
-    <circle cx="14" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <circle cx="26" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <circle cx="38" cy="14" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-  </svg>
-);
-
-// Rotary mower — deck with hitch arm and skid shoes
-const IconMower = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32 20 L32 10 L18 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <path d="M18 4 L14 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-    <rect x="6" y="20" width="52" height="18" rx="4" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5"/>
-    <circle cx="22" cy="29" r="7" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <circle cx="42" cy="29" r="7" fill="none" stroke="currentColor" strokeWidth="1.8" opacity="0.4"/>
-    <line x1="17" y1="29" x2="27" y2="29" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
-    <line x1="37" y1="29" x2="47" y2="29" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
-    <path d="M10 38 L10 48 L16 50 L20 50 L22 46 L22 38" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-    <path d="M42 38 L42 48 L48 50 L52 50 L54 46 L54 38" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-  </svg>
-);
-
-// Sprayer — tank with boom arms and nozzle drops
-const IconSprayer = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="18" y="4" width="28" height="24" rx="6" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5"/>
-    <path d="M26 4 C26 0, 38 0, 38 4" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <line x1="32" y1="28" x2="32" y2="36" stroke="currentColor" strokeWidth="3"/>
-    <rect x="4" y="36" width="56" height="5" rx="2.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.2"/>
-    <line x1="8" y1="41" x2="7" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="18" y1="41" x2="17" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="32" y1="41" x2="32" y2="52" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="46" y1="41" x2="47" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <line x1="56" y1="41" x2="57" y2="50" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="7" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="17" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="32" cy="54" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="47" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-    <circle cx="57" cy="52" r="2" fill="currentColor" opacity="0.4"/>
-  </svg>
-);
-
-// Skid steer / front loader — side view with cab, boom arm and bucket
-const IconLoader = () => (
-  <svg className={css.quickCatIcon} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <rect x="2" y="26" width="30" height="18" rx="3" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.5"/>
-    <rect x="8" y="20" width="18" height="12" rx="2" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="1.8"/>
-    <rect x="10" y="22" width="14" height="7" rx="1" fill="currentColor" opacity="0.1"/>
-    <circle cx="8" cy="50" r="5.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
-    <circle cx="26" cy="50" r="5.5" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="2.5"/>
-    <line x1="2" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="1.8"/>
-    <path d="M32 36 L40 36 L40 44 L32 44" fill="currentColor" opacity="0.15" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <line x1="34" y1="26" x2="48" y2="8" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M48 8 L60 8 L62 16 L48 16 Z" fill="currentColor" opacity="0.25" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
-    <path d="M48 8 L50 2 L60 2 L62 8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-  </svg>
-);
+// ─── Category Photo URLs (Unsplash CDN) ──────────────────────
+const CAT_IMAGES = {
+  buckets: 'https://images.unsplash.com/photo-1768053823555-b75cd4ead6c4?auto=format&fit=crop&w=400&h=400&q=80',
+  blades: 'https://images.unsplash.com/photo-1675600360400-86f9ef8d9949?auto=format&fit=crop&w=400&h=400&q=80',
+  augers: 'https://images.unsplash.com/photo-1560872531-552417aded86?auto=format&fit=crop&w=400&h=400&q=80',
+  grapples: 'https://images.unsplash.com/photo-1768085091650-e8e89ef57b76?auto=format&fit=crop&w=400&h=400&q=80',
+  tiltRotators: 'https://images.unsplash.com/photo-1560872531-552417aded86?auto=format&fit=crop&w=400&h=400&q=80&crop=top',
+  plows: 'https://images.unsplash.com/photo-1760947960930-e2701e352eed?auto=format&fit=crop&w=400&h=400&q=80',
+  mowers: 'https://images.unsplash.com/photo-1629335493470-f22db7852d39?auto=format&fit=crop&w=400&h=400&q=80',
+};
 
 const IconLock = () => (
   <svg className={css.trustSvgIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -216,17 +111,16 @@ const HeroSection = () => {
 
 // ─── Quick Category Icons (separated by sector) ─────────────
 const CONSTRUCTION_CATS = [
-  { icon: IconBucket, label: 'Buckets', search: 'pub_categoryLevel2=buckets' },
-  { icon: IconBlade, label: 'Blades', search: 'pub_categoryLevel2=blades' },
-  { icon: IconAuger, label: 'Augers', search: 'pub_categoryLevel2=augers' },
-  { icon: IconGrapple, label: 'Grapples', search: 'pub_categoryLevel2=grapples' },
-  { icon: IconLoader, label: 'Loaders', search: 'pub_categoryLevel2=loaders' },
+  { image: CAT_IMAGES.buckets, label: 'Buckets', search: 'pub_categoryLevel2=buckets' },
+  { image: CAT_IMAGES.blades, label: 'Blades', search: 'pub_categoryLevel2=blades' },
+  { image: CAT_IMAGES.augers, label: 'Augers', search: 'pub_categoryLevel2=augers' },
+  { image: CAT_IMAGES.grapples, label: 'Grapples', search: 'pub_categoryLevel2=grapples' },
+  { image: CAT_IMAGES.tiltRotators, label: 'Tilt Rotators', search: 'pub_categoryLevel2=tilt-rotators' },
 ];
 
 const FARM_CATS = [
-  { icon: IconPlow, label: 'Plows', search: 'pub_categoryLevel2=plows' },
-  { icon: IconMower, label: 'Mowers', search: 'pub_categoryLevel2=mowers' },
-  { icon: IconSprayer, label: 'Sprayers', search: 'pub_categoryLevel2=sprayers' },
+  { image: CAT_IMAGES.plows, label: 'Plows', search: 'pub_categoryLevel2=plows' },
+  { image: CAT_IMAGES.mowers, label: 'Mowers', search: 'pub_categoryLevel2=mowers' },
 ];
 
 const QuickCategoryRow = () => (
@@ -237,7 +131,7 @@ const QuickCategoryRow = () => (
         {CONSTRUCTION_CATS.map(cat => (
           <a key={cat.label} href={`/s?${cat.search}`} className={css.quickCatItem}>
             <div className={css.quickCatCircle}>
-              <cat.icon />
+              <img src={cat.image} alt={cat.label} className={css.quickCatPhoto} />
             </div>
             <span className={css.quickCatLabel}>{cat.label}</span>
           </a>
@@ -250,7 +144,7 @@ const QuickCategoryRow = () => (
         {FARM_CATS.map(cat => (
           <a key={cat.label} href={`/s?${cat.search}`} className={css.quickCatItem}>
             <div className={css.quickCatCircle}>
-              <cat.icon />
+              <img src={cat.image} alt={cat.label} className={css.quickCatPhoto} />
             </div>
             <span className={css.quickCatLabel}>{cat.label}</span>
           </a>
@@ -270,7 +164,7 @@ const CATEGORIES = [
   },
   {
     title: 'Farm Attachments',
-    count: 'Plows, Mowers, Sprayers & more',
+    count: 'Plows, Mowers & more',
     image: 'https://images.unsplash.com/photo-1559214337-2bffadf34b3a?auto=format&fit=crop&w=800&q=80',
     searchParam: 'pub_categoryLevel1=farm',
   },
