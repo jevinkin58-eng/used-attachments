@@ -255,7 +255,7 @@ const FeaturedListings = () => (
     </div>
     <div className={css.featuredCta}>
       <NamedLink name="NewListingPage" className={css.featuredCtaButton}>
-        + List Your Attachment for Free
+        + List Your Attachment
       </NamedLink>
     </div>
   </section>
@@ -275,11 +275,6 @@ const TrustBanner = () => (
         <div className={css.trustStat}>
           <span className={css.trustStatNumber}>10+</span>
           <span className={css.trustStatLabel}>Provinces</span>
-        </div>
-        <div className={css.trustStatDivider} />
-        <div className={css.trustStat}>
-          <span className={css.trustStatNumber}>Free</span>
-          <span className={css.trustStatLabel}>To List</span>
         </div>
         <div className={css.trustStatDivider} />
         <div className={css.trustStat}>
